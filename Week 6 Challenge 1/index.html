@@ -1,24 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 330 portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/small.css"/>
-    <link rel="stylesheet" href="css/medium.css"/>
+    <title>ToDos</title>
+    <style>
+    
+      .board {
+        width: 320px;
+        height: 320px;
+      }
+      .board td,
+      .board tr {
+        width: 33.3%;
+        height: 33.3%;
+      }
+      .board td {
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        font-size: 5em;
+        text-align: center;
+      }
+
+      .board td:last-child {
+        border-right: 0;
+      }
+
+      .board tr:last-child td {
+        border-bottom: 0;
+      }
+
+
+    </style>
   </head>
   <body>
-    <h1>WDD 330 portfolio</h1>
-    <h2>Week06</h2>
-    <ul>
-      <li>
-        <a href="Objects/index.html">Objects notes</a>- Notes and exercises for
-        this week.
-      </li>
-    </ul>
+    <h2>Todos</h2>
+    <table class="board">
+      <tr>
+        <td></td>
+        <td>
+            <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+            <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+            <input type="text">
+        </td>
+      </tr>
+    </table>
+
+
+    <button id="add">Add</button>
+
+    <script>
+      const board = document.querySelector('.board');
+      const addButton = document.getElementById('add');
+      const markComplete = 'X';
+      const clear = ' ';
+      let task = markComplete;
+      let newTask = 'New Task'
+      function addMark(e) {
+        console.log(e.target);
+        e.target.innerHTML = task;
+        if (task === markComplete) task = clear;
+        else task = markComplete;
+      }
+    
+      function addTask(e) {
+        console.log(e.target);
+        e.target.innerHTML = newTask;
+      }
+
+      board.addEventListener('click', addMark);
+      add.addEventListener('click', addTask);
+    </script>
   </body>
 </html>
