@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Week04</h2>
+    <p>
+        <h3>Ch 8</h3>
+
+        <li>What is “truthy”?</li>
+        <li>When radio buttons have the same 'name' attribute, this is used to group them together ― only one radio button can be checked in a group that has the same name attribute. It also means we can access an HTML collection of all the radio buttons in that group using the property of the same name
+            New Attributes in HTML5</li>
+        <li>The input element includes some of the new attributes introduced in HTML5.</li>
+        
+        <li>The autofocus attribute give focus to this element when a page loads. It is the equivalent to putting the following line of JavaScript in main.js:</li>
+        
+        
+        <li>document.forms.hero.heroName.focus();</li>
+        
+        <li>The placeholder attribute will insert the value provided in the input field until the user enters some text. This can be useful to place hints about how to fill in the form.</li>
+        
+        <li>The maxlength attribute will limit the number of characters that can be entered in the field to the value given (in this case 32).</li>
+        
+        <li>There are many new attributes that can be employed to make forms more user-friendly. A good roundup of all the new form elements can be found in this article on the SitePoint website. (Links to an external site.)
+            HTML5 has its own validation API that can be used, although it lacks the full support from all browsers at the moment. The error messages that it produces can look inconsistent across browsers and are difficult to style.
+            Forms are the primary method used for entering data into a browser.
+            Forms have a variety of controls that are used for entering different types of information.
+            HTML5 has a large number of new input types that are beginning to be implemented in modern browsers.
+            document.forms will return an HTML collection of all the forms on a page.
+            form.elements will return an HTML collection of all the elements contained within a form.
+            Forms have focus, blur, and change events that fire as a user interacts with the form.
+            Forms also have a submit event that can be used to intercept a form before it’s been submitted.
+            The information entered into a form can be read or updated using the value property of the form controls.
+            The HTML5 form validation API can be used to automatically validate a form, but only at a basic level, so a custom validation script may be required.</li>
+        
+        
+        <h3>Ch 12</h3>
+        
+       <li> There are three main concepts in OOP: encapsulation, polymorphism and inheritance
+    </li>
+        
+       <li> Polymorphism
+        
+        My juicer isn't the only appliance I own that has an 'on' button, although the way the on button works is slightly different for each appliance. My juicer also uses the same electrical outlet as other appliances in my kitchen. I can also place various types of fruit into it and it still juices them. These examples demonstrate the concept of polymorphism: the same process can be used for different objects. In OOP, this means various objects can share the same method, but also have the ability to override shared methods with a more specific implementation.
+        The concept of polymorphism means that different objects can have the same method, but implement it in different ways</li>
+        
+        
+        <li>Mixins
+        
+            A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by ‘mixing’ basic objects together.</li>
+        <h3>Chapter Summary</h3>
+        
+       <li> Object-oriented programming (OOP) is a way of programming that uses objects that encapsulate their own properties and methods.
+        The main concepts of OOP are encapsulation, polymorphism and inheritance.
+        Constructor functions can be used to create instances of objects.
+        ES6 introduced class declarations that use the class keyword. These can be used in place of constructor functions.
+        Inside a constructor function or class declaration, the keyword this refers to the object returned by the function.
+        All instances of a class or constructor function inherit all the properties and methods of its prototype.
+        The prototype is live, so new properties and methods can be added to existing instances.
+        The prototype chain is used to find an available method. If an object lacks a method, JavaScript will check whether its prototype has the method. If not, it will check that function’s prototype until it finds the method or reaches the Object constructor function.
+        Private properties and methods can be created by defining variables using const and defining a function inside a constructor function. These can be made public using getter and setter functions.
+        Monkey-patching is the process of adding methods to built-in objects by augmenting their prototypes. This should be done with caution as it can cause unexpected behavior in the way built-in objects work.
+        A mixin method can be used to add properties and methods from other objects without creating an inheritance chain.
+        Methods can be chained together and called in sequence if they return a reference to this.
+        Polymorphism allows objects to override shared methods with a more specific implementation.
+        The value of this is not retained inside nested functions, which can cause errors. This can be worked around by using that = this, using the bind(this) method and using arrow functions.
+        Methods can be borrowed from other objects.
+        Composition over inheritance is a design pattern where objects are composed from 'building-block' objects, rather than inheriting all their properties and methods from a parent class.</li>
+        
+        
+        <h3>   Ch. 15 Modular JS section</h3>
+        
+        
+        
+        <li>A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules</li>
+        
+        
+        
+        <li>Modules also allow a public API to be exposed, while keeping the implementation hidden away inside the module.</li>
+        
+        
+        
+        <li>Coupling
+        
+            The coupling of code refers to how dependent certain elements or modules of code are on each other. Two pieces of code are said to be tightly coupled if one relies on the other to run. This often occurs if a piece of code makes hard-coded references to another piece of code, requiring it to be used. This will often mean that changes to one piece of code will necessitate changes in the other.</li>
+        
+        
+        
+        <li> All code in modules is always in strict mode without the need for 'use strict' and there is no way to opt out of this.
+            A module has its own global scope, so any variables created in the top-level of a module can only be accessed within that module.
+            The value of this in the top level of a module is undefined, rather than the global object.
+            You can't use HTML-style comments in modules (although this isn't very common in any JavaScript program these days).
+            </li>
+        
+        <li>Not everything in a module needs to be used — export what is desired</li>
+        
+        <li>        Default exports refer to a single variable, function or class in a module that can be imported without having to be explicitly named. The syntax for default exports is purposely easier to read because this is how modules were designed to be used.
+        
+        
+        
+            Don't Use More Than One Default Export
+            
+            Having more than one default export will result in a syntax error.
+            
+            
+            
+            The big difference with default exports is that you don't need to use curly braces or make any mention of the value that is being imported, making the statement read more elegantly.
+            
+            
+            
+            The alias that is assigned to the imported module does not have to match its name in the actual module.</li>
+        
+</p>
+  </body>
+</html>

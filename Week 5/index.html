@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Week05</h2>
+    <p>
+        <h3>Ch 10</h3>
+
+
+
+<li>As programmers, we often have little influence over how external systems work, so it can be difficult to fix the root cause of system errors</li>
+
+
+
+<li>It might even be argued that user errors are in fact also programmer errors, because the program should be designed in a way that prevents the user from making the error.
+</li>
+
+
+<h4>Evaluation code vs Production Code :</h4>
+
+
+
+<li>Failing silently makes errors difficult to spot and longer to track down.
+
+    For this reason, a ninja programmer should ensure that the code they write fails loudly in development so any errors can be identified and fixed quickly. In production, a ninja programmer should try to make the code fail gracefully (although not completely silently ― we still need to know there’s an error), so the user experience is not affected, if possible. This is achieved by making sure exceptions are caught and dealt with, and code is tested rigorously.
+    
+    
+    
+    Strict mode simply requires the following string to be added to the first line of a JavaScript file:
+    
+    
+    
+    'use strict';</li>
+
+
+
+<li>Debugging Tools
+
+    Most modern browsers also have a debugging tool that allows you to set breakpoints in your code that will pause it at certain points. You can then see the values of all the variables at those points and modify them. This can be very useful when trying to track down bugs.
+    
+    
+    
+    debugger keyword. This will create a breakpoint in your code that will pause the execution of the code and allow you to see where the program is currently up to. You can also hover over any variables to see what value they hold at that point. The program can then be restarted by clicking on the 'play' button
+    
+    
+    
+    **Remove Debugging Code Prior to Shipping
+    
+    Remember to remove any references to the debugger command before shipping any code, otherwise the program will appear to freeze when people try to use it!
+    
+    
+    
+    -Error object can also be used as constructors to create custom error objects:
+    
+    
+    
+    const error = new TypeError('You need to use numbers in this function');</li>
+
+
+
+<li>try, catch, and finally</li>
+
+
+
+<li>Test-driven Development
+
+    Test-driven development (TDD) is the process of writing tests before any actual code. Obviously these tests will initially fail, because there is no code to test. The next step is to write some code to make the tests pass. After this, the code is refactored to make it faster, more readable, and remove any repetition. The code is continually tested at each stage to make sure it continues to work. This process should be followed in small piecemeal chunks every time a new feature is implemented, resulting in the following workflow:
+    
+    Write tests (that initially fail)
+    Write code to pass the tests
+    Refactor the code
+    Test refactored code
+    Write more tests for new features</li>
+
+
+<li>Bugs are unavoidable in code, and it’s best to find them early rather than later.
+    JavaScript can be put into strict mode using the string "use strict". This can be used in a whole file or just a single function.
+    Linting tools can be used to ensure your code follows good practice and conventions.
+    Feature detection can check whether a method is supported before calling it, helping to avoid an exception being thrown.
+    The console and browser’s built-in debugging tool can be used to interactively find and fix bugs in code.
+    Exceptions can be thrown using the throw statement.
+    An error object is created when an exception occurs.
+    Any code placed inside a try block will pass any error objects to a catch block when an exception occurs. Any code inside a finally block will run if an exception does or does not occur.
+    Test-driven development is the practice of writing tests that fail, then writing the code that passes the test, then refactoring the code every time a new feature is implemented.
+    The Jest framework can be used to test your code.</li>
+
+    </p>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Week03</h2>
+    <ul>
+      <li>-sayHi: function() —> we can omit "function" and just write sayHi()</li>
+        
+        <li>*the notations are not fully identical. There are subtle differences related to object inheritance (to be covered later), but for now they do not matter. In almost all cases the shorter syntax is preferred.
+        
+        
+        
+            -“This” in methods
+            
+            It’s common that an object method needs to access the information stored in the object to do its job.</li>
+        
+        
+        
+        <li> -JavaScript, keyword this behaves unlike most other programming languages. It can be used in any function, even if it’s not a method of an object.</li>
+        
+        
+        
+        <li>* The consequences of unbound this
+        
+            If you come from another programming language, then you are probably used to the idea of a "bound this", where methods defined in an object always have this referencing that object.
+            
+            In JavaScript this is “free”, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”.
+            
+            The concept of run-time evaluated this has both pluses and minuses. On the one hand, a function can be reused for different objects. On the other hand, the greater flexibility creates more possibilities for mistakes.
+            
+            Here our position is not to judge whether this language design decision is good or bad. We’ll understand how to work with it, how to get benefits and avoid problems.</li>
+        
+        
+        
+        <li> -Arrow functions have no “this” 
+        
+            -Arrow functions are special: they don’t have their “own” this. If we reference this from such a function, it’s taken from the outer “normal” function.</li>
+        
+        
+        
+        <li>-A function can be copied between objects.</li>
+        
+        
+        
+        <h3>Ch. 5</h3>
+        
+        <li>-One way to think about an object is that it’s like a dictionary where you look up a property name and see a value. It's like a database of values (in fact, some databases use JavaScript objects to store information). JavaScript objects are similar to a hash or associative array in other programming languages (or even a JavaScript map). They are, however, much more flexible, as they can be employed to encapsulate code that can be reused throughout a program. They can also inherit properties from other objects in a similar way to object-oriented languages</li>
+        
+        
+        
+        <li>-The parse() method takes a string of data in JSON format and returns a JavaScript object</li>
+        
+        
+        
+       <li> -The stringify() method does the opposite, taking a JavaScript object and returning a string of JSON data</li>
+        
+        
+        
+        <h3>Ch. 6</h3>
+        
+        
+        
+        <li>-The Document Object Model (DOM) allows you to access elements of a web page and enable interaction with the page by adding and removing elements, changing the order, content and attributes of elements, and even altering how they are styled.</li>
+        
+        
+        
+        <li>-the DOM also stores any whitespace that is in the HTML document as text nodes.</li>
+        
+        
+        
+        <li>-The toggle method is a particularly useful method that will add a class if an element doesn’t have it already, and remove the class if it does have it. It returns true if the class was added and false if it was removed.</li>
+        
+        
+        
+       <li> -To stop any malicious content being added to a page using innerHTML, any code contained within script tags is not executed.</li>
+        
+       <li> -Any CSS property names that are separated by dashes must be written in camelCase notation, so the dash is removed and the next letter is capitalized because dashes are not legal characters in property names.</li> 
+        
+       
+        
+        
+        
+        <li>-While it may seem useful to be able to edit the styles of elements on the fly like this, it is much better practice to dynamically change the class of an element and keep the relevant styles for each class in a separate stylesheet.</li>
+        
+        
+        
+        <h3>Ch 7</h3>
+        
+       <li> -We saw in the last chapter how the DOM is an interface that allows you to use JavaScript to interact with a web page. Events are another part of the DOM and they are what provides the link between the web page and user interactions. Every time a user interacts with a web page, such as clicking on a link, pressing a key, or moving a mouse, an event occurs that our program can detect and then respond to.</li>
+        
+        
+        
+        <li>-The key property has good support in modern browsers, but if you need to support older browsers, then a library such as keycode.js (Links to an external site.) will come in handy as it normalizes the key codes returned. The jQuery library also has a which property (Links to an external site.) that does this as well.</li>
+        
+        
+        
+        <li>-There are two forms of event propagation: bubbling and capturing.</li>
+        
+       <li> Bubbling is when the event fires on the element clicked on first, then bubbles up the document tree, firing an event on each parent element until it reaches the root node.
+        
+        Capturing starts by firing an event on the root element, then propagates downwards, firing an event on each child element until it reaches the target element that was clicked on.</li>
+    </ul>
+  </body>
+</html>
