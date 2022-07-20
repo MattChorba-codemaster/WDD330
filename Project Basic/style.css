@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .banner-image {
+    background-image: url("KungFoodBanner.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #logo-image-wong {
+    background-image: url("WongFeiHT.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #logo-image-osaka {
+    background-image: url("OsakaVelvet.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #logo-image-trang {
+    background-image: url("BlackBettyTrangaLang.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #logo-image-yip {
+    background-image: url("YipsPlace.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #logo-image-saigon {
+    background-image: url("SaigonAsiaBistro.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #underline-break {
+    border-bottom: 6px solid black;
+  }
+
+  .container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    /* float: left; */
+    background-color: #a60303;
+    color: white;
+    text-shadow: black 10px 0 10px;
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    /* margin: 2px; */
+    margin: auto;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: inline-block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }

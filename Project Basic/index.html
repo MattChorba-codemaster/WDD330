@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Kung Food</title>
+
+	<link rel="stylesheet" media="screen" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Matt Chorba">
+	<meta name="description" content="An Asian food restaurant picker">
+
+</head>
+
+<body id="kung-food">
+    <div class="banner-image">
+		<button id = "find-me">Show options for my location</button><br/>
+	<p id = "status"></p>
+	<a id = "map-link" target="_blank"></a>
+	</div>
+
+    <div id="filter-options">
+		<!-- Control buttons po;ulated by JS -->
+		<div id="myBtnContainer">
+
+		</div>
+	</div>
+
+    <div id="underline-break">  
+    </div>
+
+	<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+	<div class="container">
+		<div class="filterDiv No_MSG Cantonese" id="logo-image-wong">Wong Fei's Honkytonk</div>
+		<div class="filterDiv Japanese" id="logo-image-osaka">Osaka Velvet</div>
+		<div class="filterDiv Vietnamese" id="logo-image-trang">Black Betty's</div>
+		<div class="filterDiv No_MSG Cantonese" id="logo-image-yip">Yip's Place</div>
+		<div class="filterDiv No_MSG Fusian" id="logo-image-saigon">Saigon Asia Gastro</div>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+</html>
